@@ -53,3 +53,28 @@ The code works, but only just. It has quality, style and security problems of th
 **Target:** aim for a Pylint score above 9.5 on your final file. A perfect 10.00/10 is very good.
 
 Be ready to explain the bugs you found and how you fixed them. You may be called on to present.
+
+## Lab 5: Static Code Analysis
+
+**Forked Repository URL:** https://github.com/nidhiravi2006-lab/L5_33_movie_reviews
+
+**Python File:** `movie_reviews.py`
+
+### Static Analysis Results
+
+- Pylint: Improved from 5.47/10 to 10.00/10
+- Bandit: Reduced from 4 issues to 0
+- Flake8: Reduced from 4 issues to 0
+
+### Deliverables
+
+- `movie_reviews.py` — Updated Python program
+- `issues_table.md` — Identified issues, fixes, and reflections
+- `before_reports/` — Original static analysis reports
+- `after_reports/` — Final static analysis reports
+
+### Git Commits
+
+1. `7ceb3c9` — Fix Pylint code quality and naming issues
+2. `f40837d` — Fix Bandit security vulnerabilities
+3. `7727695` — Fix Flake8 formatting and style issues
