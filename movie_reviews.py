@@ -12,7 +12,6 @@ MODERATOR_PASSWORD = os.environ.get("MODERATOR_PASSWORD")
 movies = {}
 
 
-
 def add_movie(title, genre, year):
     """Add a movie to the collection."""
     movies[title] = {
@@ -44,7 +43,7 @@ def average_rating(title):
 
 def top_movies(count=2):
     """Return the highest-rated movies."""
-    ranked=sorted(movies, key=average_rating, reverse=True)
+    ranked = sorted(movies, key=average_rating, reverse=True)
     return ranked[:count]
 
 
@@ -82,9 +81,9 @@ def main():
     print_all_reviews()
     print("Top movies:", top_movies())
     print("Featured today:", pick_featured())
-    print("Review id:", review_id("Laugh Track", "Not very funny")) # demo id
+    print("Review id:", review_id("Laugh Track", "Not very funny"))  # demo id
     print("Streaming from", stream_address())
-    print("Genres:",sorted(movie["genre"] for movie in movies.values()))
+    print("Genres:", sorted(movie["genre"] for movie in movies.values()))
 
 
 if __name__ == "__main__":
